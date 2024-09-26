@@ -89,11 +89,11 @@ console.log(CemberinAlani(15, pi));
 
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
 
-let ucetambolunenler,
+let ucetambolunenler = [],
   enkucuk = sayilar[0],
   enbuyuk = 0,
   ucebolunenlerintoplami,
-  besyuzdenkucuksayilar,
+  besyuzdenkucuksayilar = [],
   siralisayilar,
   tekraredensayilar;
 
@@ -126,9 +126,7 @@ ucebolunenlerintoplami = ucetambolunenler.reduce(
 
 // 3d çözümü
 
-besyuzdenkucuksayilar = sayilar.filter(
-  besyuzdenkucuksayilar.push((sayi) => sayi < 500)
-);
+besyuzdenkucuksayilar = sayilar.filter((sayi) => sayi < 500);
 
 // 3e çözümü
 
